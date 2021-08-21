@@ -1,0 +1,41 @@
+GET http://localhost:3001/api/blogs
+# Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InByYWRlZXAyNTcyIiwiaWQiOiI2MGNhYjQ2YmRkOGY4YjE5YTRlMzAyMzUiLCJpYXQiOjE2MjM5MTMzNDcsImV4cCI6MTYyMzkxNjk0N30.s4oMbKIX27W7qHmMZAV2VFBcFS3LbVL07y97x4Vj6s4
+###
+PUT http://localhost:3001/api/blogs/60c9afdecfb9bc34b8ff6d4a
+Content-Type: application/json
+
+{
+  "title":"Test Sample edited",
+  "author":"pradeep",
+  "likes":3000,
+  "url":"abc"
+}
+###
+DELETE http://localhost:3001/api/blogs/60c9afdecfb9bc34b8ff6d4a
+
+###
+POST http://localhost:3001/api/blogs
+Content-Type: application/json
+
+{
+  "title":"introvert rants",
+  "author":"introver",
+  "url":"pradeep.com",
+  "likes":"7"
+}
+
+### 
+POST http://localhost:3001/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImlhbWFuaW50cm92ZXJ0IiwiaWQiOiI2MGQ4NDg2YjU3YjAzNDIxZjBiMDcxYzkiLCJpYXQiOjE2MjQ3ODcxMDQsImV4cCI6MTYyNDc5MDcwNH0.dwvg_Qgtcz3E9MwwmanaZcJkT3HQC-l4i7qLTIGP6rE
+
+  {
+  "title":"introvert rants",
+  "author":"introver",
+  "url":"pradeep.com",
+  "likes":"7"
+}
+
+###
+DELETE http://localhost:3001/api/blogs/60d7f5ba6ebeb70094bd0802
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InByYWRlZXAyNTcyIiwiaWQiOiI2MGNhYjQ2YmRkOGY4YjE5YTRlMzAyMzUiLCJpYXQiOjE2MjQ3NjYxODYsImV4cCI6MTYyNDc2OTc4Nn0.iEyYAZuHwN3iKAxBahPbF-J1IQInC0nxbgy8uotGDzU
